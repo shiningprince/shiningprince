@@ -9,10 +9,16 @@
 
 	  	<!-- Bootstrap CSS and JavaScript -->
 	  	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-	  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	  	<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
 
 	  	<!-- jQuery Library -->
 	  	<script src="https://code.jquery.com/jquery.min.js"></script>
+
+  	  	<!-- Angular JavaScript -->
+  	  	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js"></script>
+
+  	  	<!-- ui-router -->
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>	
 
 	  	<!-- Read scripts -->
 	  	<link rel="stylesheet" type="text/css" href="css/main.css">
@@ -20,17 +26,26 @@
     </head>
 
     <body>
-    	<img id="mainLogo" src="img/sp-pageIcon-light.png">
-    	<div id="titles">
-			<h1 id="pageTitle">Shining Prince</h1>
-			<h2 id="pageSubtitle">Entertainment LLC</h2>
+    	<div ng-app="myApp">
+			<nav class="navbar navbar-default">
+				<ul id="navlist" class="nav nav-pills">
+					<a class="navbar-brand" ui-sref="home">
+						<img id="mainLogo" src="img/sp-pageIcon-light.png">
+				    	<div id="titles">
+							<h1 id="pageTitle">Shining Prince</h1>
+							<h2 id="pageSubtitle">Entertainment LLC</h2>
+						</div>
+					</a>
+					<li class="listItem" ui-sref-active="active"><a class="links" ui-sref="home">Home</a></li>
+					<li class="listItem" ui-sref-active="active"><a class="links" ui-sref="contact">Contact</a></li>
+				</ul>
+			</nav>
+
+	 		<!-- The div where all of my HTML fragments will are redirected to -->
+			<div>
+				<div ui-view></div>
+			</div>
+
 		</div>
-
-		<nav class="navbar navbar-default">
-
-		</nav>
     </body>
-
-
-
 </html>
