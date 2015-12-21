@@ -1,0 +1,29 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Serif);
+
+body {
+	font-family: 'PT Serif', serif;
+}
+
+#mainLogo {
+	width: 135px;
+}
+
+#pageTitle {
+	font-size: 44px;
+	margin-bottom: 0;
+}
+
+#pageSubtitle {
+	font-size: 30px;
+	margin-top: 0;
+
+}
+
+#titles {
+	position: absolute;
+	top: 27%;
+	left: 23%;
+	transform: translate(-50%, -50%);
+	color: #5E5274;
+	font-variant: small-caps;
+}
