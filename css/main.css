@@ -1,11 +1,40 @@
 @import url(https://fonts.googleapis.com/css?family=PT+Serif);
+@import url(https://fonts.googleapis.com/css?family=Lato);
 
 body {
-	font-family: 'PT Serif', serif;
+	font-family: 'Lato', Helvetica Neue, Helvetica, sans-serif;
+}
+
+.links {
+	color: black;
+}
+
+.listItem {
+	position: absolute;
+	left: 400px;
+	top: 90px;
 }
 
 #mainLogo {
-	width: 135px;
+	position: absolute;
+	width: 120px;
+}
+
+nav {
+	height: 135px;
+}
+
+.navbar-brand {
+	padding: 0;
+	padding-top: 8px;
+}
+
+.navbar-default {
+	background-color: white;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+	background-color: #9487ab;
 }
 
 #pageTitle {
@@ -16,14 +45,44 @@ body {
 #pageSubtitle {
 	font-size: 30px;
 	margin-top: 0;
-
 }
 
 #titles {
+	font-family: 'PT Serif', Helvetica Neue, Helvetica, serif;
+	text-align: center;
 	position: absolute;
-	top: 27%;
-	left: 23%;
-	transform: translate(-50%, -50%);
+	top: 30px;
+	left: 120px;
 	color: #5E5274;
 	font-variant: small-caps;
+}
+
+@media screen and (max-width: 768px) {
+	.links {
+		padding-top: 7px !important;
+		padding-bottom: 7px !important;
+	}
+	.listItem {
+		top: 80px;
+		left: 130px;
+	}
+	#mainLogo {
+		width: 100px;
+		top: 13px;
+		left: 20px;
+	}
+	nav {
+		height: 120px;
+	}
+	#pageTitle {
+		font-size: 34px;
+	}
+	#pageSubtitle {
+		font-size: 20px;
+	}
+	#titles {
+		width: 250px;
+		top: -5px;
+		left: 70px;
+	}
 }
