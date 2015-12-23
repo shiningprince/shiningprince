@@ -18,7 +18,16 @@
   	  	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js"></script>
 
   	  	<!-- ui-router -->
-  		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>	
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+
+  		<!-- Font Awesome -->
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">	
+
+  		<!-- Materialize CSS/JavaScript -->
+  		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+  		<!-- Materialize Icons -->
+  		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 	  	<!-- Read scripts -->
 	  	<link rel="stylesheet" type="text/css" href="css/main.css">
@@ -27,25 +36,45 @@
 
     <body>
     	<div ng-app="myApp">
-			<nav class="navbar navbar-default">
-				<ul id="navlist" class="nav nav-pills">
-					<a class="navbar-brand" ui-sref="home">
-						<img id="mainLogo" src="img/sp-pageIcon-light.png">
-				    	<div id="titles">
-							<h1 id="pageTitle">Shining Prince</h1>
-							<h2 id="pageSubtitle">Entertainment LLC</h2>
-						</div>
-					</a>
-					<li class="listItem" ui-sref-active="active"><a class="links" ui-sref="home">Home</a></li>
-					<li class="listItem" ui-sref-active="active"><a class="links" ui-sref="contact">Contact</a></li>
-				</ul>
-			</nav>
+			<!-- Materialize Navigation Bar -->
+			<nav id="us">
+			   <div class="nav-wrapper">
+			     <a ui-sref="home" class="brand-logo">						
+			     	<img class="mainLogo" src="img/sp-pageIcon-light.png">
+			     	<div class="titles">
+			     		<h1 id="usTitle">Shining Prince</h1>
+			     		<h2 id="usSubtitle">Entertainment LLC</h2>
+			     	</div>
+				</a>
+				<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+
+				<p class="language"><a class="enlink" href="jpnIndex.html">
+					<img class="flag" id="jpnflag" src="img/ja-flag.gif"> 日本語
+				</a></p>
+
+			    <ul id="nav-mobile" class="right hide-on-med-and-down">
+			        <li ui-sref-active="active" class="listItem"><a class="enlink" ui-sref="home">Home</a></li>
+			        <li ui-sref-active="active" class="listItem"><a class="enlink" ui-sref="contact">Contact</a></li>
+			    </ul>
+
+			    <ul class="side-nav" id="mobile-demo">
+			    	<li ui-sref-active="active"><a class="link" ui-sref="home">Home</a></li>
+			    	<li ui-sref-active="active"><a class="link" ui-sref="contact">Contact</a></li>
+			    </ul>
+			   </div>
+			 </nav>
 
 	 		<!-- The div where all of my HTML fragments will are redirected to -->
 			<div>
 				<div ui-view></div>
 			</div>
 
+			<!-- Materialize Footer Bar -->
+			<footer id="usFooter" class="page-footer">
+	          <div class="footer-copyright">
+	            <p class="center-align" id="usCopyright">© 2015 Shining Prince Entertainment LLC. All rights reserved.</p>
+	          </div>
+	        </footer>
 		</div>
     </body>
 </html>
