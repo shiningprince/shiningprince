@@ -122,10 +122,6 @@ a:hover, a:link {
 	margin-left: 10px;
 }
 
-.mobileDirections {
-	display: none;
-}
-
 #nav-mobile {
 	margin-right: 50px;
 }
@@ -176,12 +172,7 @@ a:hover, a:link {
 }
 
 @media screen and (max-width: 992px) {
-	.directions {
-		display: none;
-	}
-	.mobileDirections {
-		display: block;
-	}
+
 	.mainLogo {
 		width: 100px;
 		top: 13px;
