@@ -68,7 +68,7 @@ a:hover, a:link {
 	display: inline;
 }
 
-.jplink.active, .enlink.active, .jplink:hover, .enlink:hover {
+.jplink:hover, .enlink:hover, .jplink:active, .enlink:active {
 	border-radius: 10%;
 }
 
@@ -111,6 +111,10 @@ a:hover, a:link {
 	color: black;
 	margin-top: 30px;
 	margin-left: 10px;
+}
+
+.mobileDirections {
+	display: none;
 }
 
 #nav-mobile {
@@ -163,7 +167,12 @@ a:hover, a:link {
 }
 
 @media screen and (max-width: 768px) {
-
+	.directions {
+		display: none;
+	}
+	.mobileDirections {
+		display: block;
+	}
 	.mainLogo {
 		width: 100px;
 		top: 13px;
