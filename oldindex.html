@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	  	<title>Shining Prince</title>
+	  	<link rel="page icon" href="img/sp-pageIcon-light.png">
+
+	  	<!-- Bootstrap CSS and JavaScript -->
+	  	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	  	<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+
+	  	<!-- jQuery Library -->
+	  	<script src="https://code.jquery.com/jquery.min.js"></script>
+
+  	  	<!-- Angular JavaScript -->
+  	  	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js"></script>
+
+  	  	<!-- ui-router -->
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+
+  		<!-- Font Awesome -->
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">	
+
+  		<!-- Materialize CSS/JavaScript -->
+  		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+  		<!-- Materialize Icons -->
+  		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  		<!-- Papa Parse JavaScript -->
+  		<script src="js/papaparse.min.js"></script>
+
+	  	<!-- Read scripts -->
+	  	<link rel="stylesheet" type="text/css" href="css/main.css">
+	  	<script src="js/app.js"></script>
+    </head>
+
+    <body>
+    	<div ng-app="myApp">
+			<!-- Materialize Navigation Bar -->
+			<nav id="us">
+			   <div class="nav-wrapper">
+			     <a ui-sref="home" class="brand-logo">	
+			     	<img class="mainLogo" src="img/sp-pageIcon-light.png">
+			     	<div class="titles">
+			     		<h1 id="usTitle">Shining Prince</h1>
+			     		<h2 id="usSubtitle">Entertainment LLC</h2>
+			     	</div>
+				</a>
+				<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+
+				<p class="language"><a class="uslink" href="jpnIndex.html">
+					<img class="flag" id="jpnflag" src="img/ja-flag.gif"> 日本語
+				</a></p>
+
+			    <ul id="nav-mobile" class="right hide-on-med-and-down">
+			        <li ui-sref-active="active" class="listItem"><a class="uslink" ui-sref="home"><i class="fa fa-2x fa-home"></i></a></li>
+			        <li ui-sref-active="active" class="listItem"><a class="uslink" ui-sref="contact"><i class="fa fa-2x fa-at"></i></a></li>
+			    </ul>
+
+			    <ul class="side-nav" id="slide-out">
+			    	<li ui-sref-active="active"><a class="link" ui-sref="home"><i class="fa fa-2x fa-home"></i></a></li>
+			    	<li ui-sref-active="active"><a class="link" ui-sref="contact"><i class="fa fa-2x fa-at"></i></a></li>
+			    </ul>
+			   </div>
+			 </nav>
+
+	 		<!-- The div where all of my HTML fragments will are redirected to -->
+			<div>
+				<div ui-view></div>
+			</div>
+
+			<!-- Materialize Footer Bar -->
+			<footer id="usFooter" class="page-footer">
+		        <div class="footer-copyright">
+		        	<p class="center-align" id="usCopyright">© 2015 Shining Prince Entertainment LLC. All rights reserved.</p>
+		        </div>
+	        </footer>
+		</div>
+    </body>
+</html>
