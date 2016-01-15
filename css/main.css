@@ -38,6 +38,14 @@ a:hover, a:link {
 	text-decoration: none;
 }
 
+.jp-icon-link:hover i {
+	color: #302a3c;
+}
+
+.us-icon-link:hover i {
+	color: #554a69;
+}
+
 
 #jp, #us {
 	height: 155px;
