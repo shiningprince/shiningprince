@@ -45,6 +45,10 @@ body {
 	padding-right: 3.5px;
 }
 
+.fa-phone, .fa-fax, .fa-envelope, .fa-linkedin {
+	padding-top: 16px;
+}
+
 footer {
 	margin-top: 110px !important;
 }
