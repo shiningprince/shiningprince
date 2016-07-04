@@ -22,12 +22,27 @@ body {
 	margin-top: 30px;
 }
 
-#emailText {
-	padding-left: 14px;
+#contact-info {
+	max-width: 75em;
 }
 
-#faxNum {
-	padding-left: 10px;
+.jpnNum {
+	padding-right: 0;
+}
+
+.fa-linkedin {
+	padding-left: 2.3px;
+	padding-right: 2.3px;
+}
+
+.fa-mobile {
+	padding-left: 5.75px;
+	padding-right: 5.75px
+}
+
+.fa-phone {
+	padding-left: 3.5px;
+	padding-right: 3.5px;
 }
 
 footer {
@@ -38,8 +53,16 @@ a:hover, a:link {
 	text-decoration: none;
 }
 
+.jp-icon-link {
+	color: white;
+}
+
 .jp-icon-link:hover i {
 	color: #302a3c;
+}
+
+.us-icon-link {
+	color: black;
 }
 
 .us-icon-link:hover i {
@@ -53,9 +76,6 @@ a:hover, a:link {
 
 #jp, #jpBody, #jpFooter {
 	background-color: #A692AB;
-}
-
-#jpBody {
 	color: white;
 }
 
@@ -73,14 +93,14 @@ a:hover, a:link {
 }
 
 .jp-icon, .us-icon {
-	margin-bottom: 20px; 
+	margin-bottom: 20px;
 }
 
-.jp-icon-text {
-	color: white;
+.jp-contact-info {
+	padding-left: 17px;
 }
 
-.jp-icon-text, .us-icon-text {
+.jp-contact-info, .us-contact-info {
 	display: inline;
 }
 
@@ -101,10 +121,6 @@ a:hover, a:link {
 .language {
 	position: absolute;
 	right: 70px;
-}
-
-#linkedinText {
-	padding-left: 19px;
 }
 
 .language, .uslink {
@@ -134,15 +150,11 @@ a:hover, a:link {
 	margin-right: 50px;
 }
 
-#phoneNum {
-	padding-left: 17px;
-}
-
 .textbody {
 	font-size: 16px;
 }
 
-.titles {
+#titles {
 	font-family: 'PT Serif', Helvetica Neue, Helvetica, serif;
 	text-align: center;
 	position: absolute;
@@ -171,8 +183,8 @@ a:hover, a:link {
 	color: #9487ab;
 }
 
-.us-icon-text {
-	color: black;
+.us-contact-info {
+	padding-left: 17px;
 }
 
 #usSubtitle, #usTitle {
@@ -189,13 +201,13 @@ a:hover, a:link {
 	#jp, #us {
 		height: 130px;
 	}
-	#jpTitle, #usTitle {
+	#jpTitle, .usTitle {
 		font-size: 34px;
 	}
 	#jpSubtitle, #usSubtitle {
 		font-size: 20px;
 	}
-	.titles {
+	#titles {
 		width: 250px;
 		left: -90px;
 	}
