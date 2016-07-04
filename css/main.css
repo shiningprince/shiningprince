@@ -83,6 +83,10 @@ a:hover, a:link {
 	color: white;
 }
 
+.footer-copyright {
+	flex: auto;
+}
+
 #jpnflag {
 	height: 1.2em;
 	border: solid 1px;
@@ -109,12 +113,12 @@ a:hover, a:link {
 }
 
 #jpSubtitle, #usSubtitle {
-	font-size: 30px;
+	font-size: 28px;
 	margin-top: 0;
 }
 
 #jpTitle, #usTitle {
-	font-size: 44px;
+	font-size: 40px;
 	margin-bottom: 0;
 }
 
@@ -201,14 +205,14 @@ a:hover, a:link {
 	#jp, #us {
 		height: 130px;
 	}
-	#jpTitle, .usTitle {
-		font-size: 34px;
+	#jpTitle, #usTitle {
+		font-size: 30px;
 	}
 	#jpSubtitle, #usSubtitle {
-		font-size: 20px;
+		font-size: 22px;
 	}
 	#titles {
 		width: 250px;
-		left: -90px;
+		left: -80px;
 	}
 }
