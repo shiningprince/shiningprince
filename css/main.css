@@ -1,4 +1,4 @@
-/*@import url(https://fonts.googleapis.com/css?family=PT+Serif);
+@import url(https://fonts.googleapis.com/css?family=PT+Serif);
 @import url(https://fonts.googleapis.com/css?family=Lato);
 @import url(https://fonts.googleapis.com/css?family=Arimo);
 
@@ -193,6 +193,18 @@ a:hover, a:link {
 
 
 @media screen and (max-width: 992px) {
+
+	.flex-container {
+	display: -webkit-flex;
+	display: flex;
+	flex-flow: row wrap;
+	}
+	.flex-item {
+		flex: 0 1 auto;
+		width: 33%;
+		height: 33%;
+	}
+
 	.mainLogo {
 		width: 100px;
 		top: 13px;
@@ -212,4 +224,3 @@ a:hover, a:link {
 		left: -80px;
 	}
 }
-*/
