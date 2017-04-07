@@ -9,32 +9,19 @@
 
   	<!-- Bootstrap CSS and JavaScript -->
   	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-  	<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
 
-  	<!-- jQuery Library -->
-  	<script src="https://code.jquery.com/jquery.min.js"></script>
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-	  	<!-- Angular JavaScript -->
-	  	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js"></script>
+	<!-- Materialize CSS/JavaScript -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+	<!-- Materialize Icons -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-	  	<!-- ui-router -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
-
-		<!-- Font Awesome -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
-		<!-- Materialize CSS/JavaScript -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
-		<!-- Materialize Icons -->
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-		<!-- Papa Parse JavaScript -->
-		<script src="js/papaparse.min.js"></script>
 
   	<!-- Read scripts -->
   	<link rel="stylesheet" type="text/css" href="css/main.css">
-  	<script src="js/app.js"></script>
   </head>
 
   <body>
@@ -48,21 +35,8 @@
 		     		<h2 id="usSubtitle">Entertainment LLC</h2>
 		     	</div>
 			</a>
-			<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
 
-			<p class="language"><a class="uslink" href="jpnIndex.html">
-				<img id="jpnflag" src="img/ja-flag.gif"> 日本語
-			</a></p>
-
-		    <ul id="nav-mobile" class="right hide-on-med-and-down">
-		        <li class="listItem active"><a class="uslink" href="#"><i class="fa fa-2x fa-home"></i></a></li>
-		        <li class="listItem"><a class="uslink" href="contact.html"><i class="fa fa-2x fa-at"></i></a></li>
-		    </ul>
-
-		    <ul class="side-nav" id="slide-out">
-		    	<li><a class="link active" href="#"><i class="fa fa-2x fa-home"></i></a></li>
-		    	<li><a class="link" href="contact.html"><i class="fa fa-2x fa-at"></i></a></li>
-		    </ul>
+			<p class="language"><a class="uslink" href="jpnIndex.html">日本語</a></p>
 		   </div>
 		 </nav>
 
@@ -78,26 +52,55 @@
 		 	</div>
 
 		 	<h4>Selected Clients</h4>
-		 <!-- 	<div class="carousel">
-		 		<a class="carousel-item" ng-repeat="img in imgs | orderBy: random"><img ng-src="{{img.imgPath}}"></a>
-		 	</div> -->
-		 	<div class="carousel">
-		 		<a class="carousel-item"><img src="img/clients/DW_homeEnt.gif"></a>
-		 	    <a class="carousel-item"><img src="img/clients/paramount.jpg"></a>
-		 	    <a class="carousel-item"><img src="img/clients/DW_skg.jpg"></a>
-		 	    <a class="carousel-item"><img src="img/clients/imax.jpg"></a>
-		 	    <a class="carousel-item"><img src="img/clients/hulu.jpg"></a>
-		 	    <a class="carousel-item"><img src="img/clients/rentrak.png"></a>
-		 	    <a class="carousel-item"><img src="img/clients/vnet.png"></a>
+		 	<div class="flex-container">
+		 		<img class="flex-item" src="img/clients/20th Century.png">
+		 		<img class="flex-item" src="img/clients/Asmik.png">
 		 	</div>
+
+		 	<!-- Contact -->
+			<h5 class="contactHead">Please call or email us with your questions or inquiries.</h5>
+			<div class="textbody">
+				<p>Shining Prince Entertainment LLC</p>
+				<p>Geoffrey Bossiere, Founder & Principal</p>
+				<div class="container" id="contact-info">
+					<div class="col-xs-12 col-sm-6">
+						<i class="fa fa-mobile fa-3x us-icon"></i>
+						<p class="us-contact-info">+1-310-500-7258</p>
+					</div>
+					<div class="col-xs-12 col-sm-6 jpnNum">
+						<i class="fa fa-mobile fa-3x us-icon"></i>
+						<p class="us-contact-info">+81-80-3128-7589</p>
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<i class="fa fa-phone fa-2x us-icon"></i>
+						<p class="us-contact-info">+1-310-237-5548</p>
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<i class="fa fa-fax fa-2x us-icon"></i>
+						<p class="us-contact-info">1-866-548-0556</p>
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<a class="us-icon-link" href="mailto:gpb@shiningprince.com"><i class="fa fa-envelope fa-2x us-icon"></i>
+						<p class="us-contact-info">Email</p></a>
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<a class="us-icon-link" target="_blank" href="https://www.linkedin.com/in/gbossiere"><i class="fa fa-linkedin fa-2x us-icon"></i>
+						<p class="us-contact-info">LinkedIn</p></a>
+					</div>
+				</div>
+			</div>
+
 		 </div>
+
+
+
   </body>
 
 
 	<!-- Materialize Footer Bar -->
 	<footer id="usFooter" class="page-footer">
     <div class="footer-copyright">
-    	<p class="center-align" id="usCopyright">© 2015 Shining Prince Entertainment LLC. All rights reserved.</p>
+    	<p class="center-align" id="usCopyright">© 2017 Shining Prince Entertainment LLC. All rights reserved.</p>
     </div>
   </footer>
 </html>
