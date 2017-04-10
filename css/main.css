@@ -11,8 +11,9 @@ body {
 	font-size: 16px;
 }
 
-.contactHead {
-	margin-top: 30px;
+#contact {
+	margin-top: 2em;
+	margin-bottom: 2em;
 }
 
 #contact-info {
@@ -40,10 +41,6 @@ body {
 
 .fa-phone, .fa-fax, .fa-envelope, .fa-linkedin {
 	padding-top: 16px;
-}
-
-footer {
-	margin-top: 110px !important;
 }
 
 a:hover, a:link {
@@ -100,8 +97,6 @@ a:hover, a:link {
 	border-radius: 10%;
 }
 
-
-
 .language {
 	position: absolute;
 	right: 70px;
@@ -129,8 +124,10 @@ a:hover, a:link {
 	color: #9487ab;
 }
 
-#usFooter {
-	background-color: white !important;
+footer {
+	background-color: #efefef !important;
+	padding: 1em 0;
+	font-size: 0.85em;
 }
 
 .us-icon {
@@ -163,6 +160,13 @@ a:hover, a:link {
 .bg {
 	background-color: #A692AB;
 	min-width: 100%;
+	padding-bottom: 3em !important;
+}
+
+#clients {
+	color: white;
+	padding-top: 0.5em;
+	margin-bottom: 0.50em;
 }
 
 .mainLogo {
@@ -193,8 +197,24 @@ a:hover, a:link {
 	font-variant: small-caps;
 	color: #5E5274;
 }
-.list-item {
-	display: list-item;
+
+ul li {
+	list-style-type: disc;
+}
+#list {
+	padding-bottom: 0.5em;
+	list-style-type: disc;
+	margin-left: 5%;
+}
+
+#inner-list li {
+	list-style-type: circle;
+	margin-left: 5%;
+}
+
+#about {
+	margin-top: 1em;
+	margin-bottom: 2em;
 }
 
 @media screen and (min-width: 600px) {
