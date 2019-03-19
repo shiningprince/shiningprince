@@ -8,7 +8,7 @@
 
 body {
 	font-family: 'Arimo', Helvetica Neue, Helvetica, sans-serif;
-	font-size: 16px;
+	font-size: 15px;
 }
 
 #contact {
@@ -16,84 +16,19 @@ body {
 	margin-bottom: 2em;
 }
 
-#contact-info {
-	max-width: 75em;
+#company-about {
+	padding-bottom: 40px;
 }
 
-.jpnNum {
-	padding-right: 0;
-}
-
-.fa-linkedin {
-	padding-left: 2.3px;
-	padding-right: 2.3px;
-}
-
-.fa-mobile {
-	padding-left: 5.75px;
-	padding-right: 5.75px
-}
-
-.fa-phone {
-	padding-left: 3.5px;
-	padding-right: 3.5px;
-}
-
-.fa-phone, .fa-fax, .fa-envelope, .fa-linkedin {
-	padding-top: 16px;
+a {
+	color: #5d4c84;
 }
 
 a:hover, a:link {
 	text-decoration: none;
 }
 
-.jp-icon-link {
-	color: white;
-}
-
-.jp-icon-link:hover i {
-	color: #302a3c;
-}
-
-.us-icon-link {
-	color: black;
-}
-
-.us-icon-link:hover i {
-	color: #554a69;
-}
-
-#jp, #jpBody, #jpFooter {
-	background-color: #A692AB;
-	color: white;
-}
-
-#jpCopyright {
-	color: white;
-}
-
-#jpnflag {
-	height: 1.2em;
-	border: solid 1px;
-}
-
-.jp-icon {
-	color: #554a69;
-}
-
-.jp-icon, .us-icon {
-	margin-bottom: 20px;
-}
-
-.jp-contact-info {
-	padding-left: 17px;
-}
-
-.jp-contact-info, .us-contact-info {
-	display: inline;
-}
-
-.jplink:hover, .uslink:hover {
+.langLink:hover {
 	border-radius: 10%;
 }
 
@@ -102,14 +37,8 @@ a:hover, a:link {
 	right: 70px;
 }
 
-.language, .uslink {
+.language, .langLink {
 	color: black;
-}
-
-.material-icons {
-	color: black;
-	margin-top: 30px;
-	margin-left: 10px;
 }
 
 #nav-mobile {
@@ -128,18 +57,6 @@ footer {
 	background-color: #efefef !important;
 	padding: 1em 0;
 	font-size: 0.85em;
-}
-
-.us-icon {
-	color: #9487ab;
-}
-
-.us-contact-info {
-	padding-left: 17px;
-}
-
-#usSubtitle, #usTitle {
-	color: #5E5274;
 }
 
 .flex-container {
@@ -171,8 +88,7 @@ footer {
 
 .mainLogo {
 	position: absolute;
-	width: 100px;
-	top: 13px;
+	width: 300px;
 	left: -150px;
 }
 #navbar {
@@ -228,8 +144,8 @@ ul li {
 		width: calc(25% - 1em);
 	}
 	.mainLogo {
-		width: 120px;
-		top: 15px;
+		width: 400px;
+		top: -20px;
 		left: 50px;
 	}
 	#navbar {
